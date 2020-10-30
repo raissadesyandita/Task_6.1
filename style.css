@@ -1,0 +1,258 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(255, 226, 183);
+}
+.navbar-brand {
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    text-shadow: 1px rgb(68, 39, 0);
+}
+.nav-link {
+    font-family: 'Ruda', sans-serif;
+    font-size: 15px;
+}
+
+
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(https://www.mercurynews.com/wp-content/uploads/2019/04/GettyImages-605756934.jpg);
+    background-size: cover;
+    height: 950px;
+    position: relative;
+}
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+.jummbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4 {
+    font-family: 'Ruda', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+    color: white;
+    text-shadow: black;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.jumbotron .lead {
+    font-family: 'Ruda', sans-serif;;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    /* background-color: rgb(243, 243, 224);
+    border-radius: 10px; */
+}
+.symbol {
+    height: 22.5px;
+    width: 22.5px;
+    margin: 5px;
+}
+
+
+
+/* Panel Info */
+.info-panel {
+    background-color: rgb(255, 242, 198);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: -75px;
+    padding-top: 10px;
+}
+.float-left {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+
+/* Working Space */
+.workingspace {
+    margin-top: 150px;
+}
+.img-fluid {
+    width: 800px;
+    height: 500px;
+    margin-left: 15px;
+    padding-left: 30px;
+}
+.workingspace h2 {
+    font-family: 'Alegreya Sans FC', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-bottom: 25px;
+}
+.workingspace h4 {
+    font-family: 'Alegreya Sans FC', sans-serif;
+    text-align: center;
+}
+.workingspace p {
+    font-family: 'Alegreya Sans FC', sans-serif;
+    font-size: 20px;
+    color: sienna;
+    text-align: center;
+    margin-right: 15px;
+    padding-right: 30px;
+}
+
+
+
+/* Article */
+.card-deck {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    background-color: sienna;
+    border-radius: 10px;
+}
+h2 {
+    font-family: 'Itim', cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.card-img-top {
+    height: 150px;
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+}
+.card-title {
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.card-text {
+    font-family: 'Itim', cursive;
+    font-size: 18px;
+    text-align: justify;
+}
+.clickbait {
+    color: black;
+    font-style: italic;
+}
+
+
+
+
+
+
+/* Social Media */
+.social-media {
+    font-family: 'Sail', cursive;
+    font-size: 35px;
+    font-weight: 700;
+    margin: auto;
+    padding-top: 35px;
+}
+.socmed-icon {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: block;
+}
+
+
+/* Utility */
+.button {
+    text-transform: uppercase;
+    font-family: 'Rancho', cursive;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgb(65, 33, 3);
+    background-color: rgb(65, 33, 3);
+    font-display: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+}
+.border {
+    height: 5px;
+    width: 100%;
+    text-align: center;
+}
+.click {
+    font-family: 'Sail', cursive;
+    font-size: 20px;
+    font-weight: 500;
+    color: brown;
+    text-align: center;
+    display: block;
+    padding-bottom: 75px;
+    margin-bottom: 75px;
+}
+footer { 
+    height: 2em;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link {
+        font-style: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }  
+    .nav-link {
+        font-family: 'Ruda', sans-serif;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .dropdown-item {
+        font-family: 'Ruda', sans-serif;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 1px solid rgb(255, 238, 191);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron .display-4 {
+        font-size: 70px;
+    }
+    .jumbotron .lead {
+        font-size: 35px;
+    }
+    .symbol {
+        display: flexbox;
+    }
+    .workingspace p {
+        text-align: justify;
+    }
+    .card-img-top {
+        height: 250px;
+    }
+}
